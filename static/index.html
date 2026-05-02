@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>MediScan — AI Disease Detection</title>
+<link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🩺</div>
+      <div>
+        <div class="logo-text">MediScan</div>
+        <div class="logo-sub">AI-Powered Multi-Disease Health Analysis</div>
+      </div>
+    </div>
+    <div class="disclaimer">⚠️ For educational purposes only — not a substitute for professional medical advice.</div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Comprehensive Disease<br/><span>Risk Assessment</span></h1>
+    <p>5 ML models analyze your biomarkers for diabetes, heart disease, hypertension, kidney risk, and overall health in seconds.</p>
+    <div class="model-badges">
+      <span class="mbadge">🩸 Diabetes</span>
+      <span class="mbadge">❤️ Heart Disease</span>
+      <span class="mbadge">💉 Hypertension</span>
+      <span class="mbadge">🫘 Kidney Risk</span>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-card">
+    <div class="section-title">Personal Info</div>
+    <div class="grid-2">
+      <div class="field">
+        <label>Age <span>years</span></label>
+        <input type="number" id="age" value="45" min="18" max="100"/>
+      </div>
+      <div class="field">
+        <label>Gender</label>
+        <div class="toggle-group">
+          <button class="toggle-btn active" onclick="setToggle('gender',0,this)">Female</button>
+          <button class="toggle-btn" onclick="setToggle('gender',1,this)">Male</button>
+        </div>
+        <input type="hidden" id="gender" value="0"/>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="section-title">Vitals</div>
+    <div class="grid-3">
+      <div class="field"><label>BMI <span>kg/m²</span></label><input type="number" id="bmi" value="25.0" step="0.1"/></div>
+      <div class="field"><label>Systolic BP <span>mmHg</span></label><input type="number" id="systolic_bp" value="120"/></div>
+      <div class="field"><label>Diastolic BP <span>mmHg</span></label><input type="number" id="diastolic_bp" value="80"/></div>
+      <div class="field"><label>Heart Rate <span>bpm</span></label><input type="number" id="heart_rate" value="72"/></div>
+      <div class="field"><label>Waist Circumference <span>cm</span></label><input type="number" id="waist_cm" value="85"/></div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="section-title">Blood Work</div>
+    <div class="grid-3">
+      <div class="field"><label>Glucose <span>mg/dL</span></label><input type="number" id="glucose" value="95"/></div>
+      <div class="field"><label>HbA1c <span>%</span></label><input type="number" id="hba1c" value="5.4" step="0.1"/></div>
+      <div class="field"><label>Total Cholesterol <span>mg/dL</span></label><input type="number" id="cholesterol" value="190"/></div>
+      <div class="field"><label>HDL <span>mg/dL</span></label><input type="number" id="hdl" value="55"/></div>
+      <div class="field"><label>LDL <span>mg/dL</span></label><input type="number" id="ldl" value="120"/></div>
+      <div class="field"><label>Triglycerides <span>mg/dL</span></label><input type="number" id="triglycerides" value="130"/></div>
+      <div class="field"><label>Creatinine <span>mg/dL</span></label><input type="number" id="creatinine" value="1.0" step="0.1"/></div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="section-title">Lifestyle & Mental Health</div>
+    <div class="grid-2">
+      <div class="field">
+        <label>Smoking Status</label>
+        <div class="toggle-group">
+          <button class="toggle-btn active" onclick="setToggle('smoking',0,this)">Non-Smoker</button>
+          <button class="toggle-btn" onclick="setToggle('smoking',1,this)">Smoker</button>
+        </div>
+        <input type="hidden" id="smoking" value="0"/>
+      </div>
+      <div class="field">
+        <label>Family History of Disease</label>
+        <div class="toggle-group">
+          <button class="toggle-btn active" onclick="setToggle('family_history',0,this)">No</button>
+          <button class="toggle-btn" onclick="setToggle('family_history',1,this)">Yes</button>
+        </div>
+        <input type="hidden" id="family_history" value="0"/>
+      </div>
+    </div>
+    <div class="grid-3" style="margin-top:16px">
+      <div class="field slider-field">
+        <label>Exercise Days / Week</label>
+        <div class="slider-row">
+          <input type="range" id="exercise_days" min="0" max="7" value="3"
+            oninput="document.getElementById('ex-val').textContent=this.value"/>
+          <span class="slider-val" id="ex-val">3</span>
+        </div>
+      </div>
+      <div class="field slider-field">
+        <label>Stress Level</label>
+        <div class="slider-row">
+          <input type="range" id="stress_level" min="1" max="10" value="4"
+            oninput="document.getElementById('st-val').textContent=this.value"/>
+          <span class="slider-val" id="st-val">4</span>
+        </div>
+      </div>
+      <div class="field slider-field">
+        <label>Sleep Hours / Night</label>
+        <div class="slider-row">
+          <input type="range" id="sleep_hours" min="3" max="12" value="7" step="0.5"
+            oninput="document.getElementById('sl-val').textContent=this.value"/>
+          <span class="slider-val" id="sl-val">7</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Alcohol Consumption</label>
+        <div class="select-wrap">
+          <select id="alcohol_consumption">
+            <option value="0">None</option>
+            <option value="1">Light (1–2 drinks/wk)</option>
+            <option value="2">Moderate (3–7 drinks/wk)</option>
+            <option value="3">Heavy (8+ drinks/wk)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-analyze" id="analyzeBtn" onclick="analyze()">
+      <span id="btn-text">Analyze My Health</span>
+    </button>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="result-panel">
+    <!-- Overall verdict -->
+    <div class="result-hero" id="result-hero">
+      <div class="result-badge" id="result-badge"></div>
+      <div class="result-title" id="result-title"></div>
+      <div class="result-subtitle" id="result-subtitle"></div>
+      <div class="prob-meter">
+        <div class="prob-label">
+          <span>Overall Disease Risk</span>
+          <span id="prob-pct"></span>
+        </div>
+        <div class="prob-track"><div class="prob-bar" id="prob-bar" style="width:0%"></div></div>
+        <div class="risk-pill" id="risk-pill"></div>
+      </div>
+    </div>
+
+    <!-- Disease breakdown -->
+    <div class="section-label">Disease Breakdown</div>
+    <div class="disease-grid" id="disease-grid"></div>
+
+    <!-- Risk factors + Recommendations -->
+    <div class="section-label">Risk Analysis & Recommendations</div>
+    <div class="analysis-grid">
+      <div class="info-card">
+        <div class="info-card-title">⚡ Risk Factors <span id="flag-count" class="badge-count"></span></div>
+        <div id="risk-filter-row" class="filter-row"></div>
+        <ul class="risk-list" id="risk-list"></ul>
+      </div>
+      <div class="info-card">
+        <div class="info-card-title">💡 Personalised Recommendations</div>
+        <ul class="rec-list" id="rec-list"></ul>
+      </div>
+    </div>
+
+    <!-- ML Insights -->
+    <div class="section-label">Model Insights</div>
+    <div class="info-card" style="margin-bottom:32px">
+      <div class="info-card-title">🔬 Top Predictive Features (Feature Importance)</div>
+      <div class="contrib-list" id="contrib-list"></div>
+    </div>
+  </div>
+
+  <footer>
+    5 Gradient Boosting Classifiers · 8,000 training samples · 20 biomarkers<br/>
+    Built with Python · scikit-learn · Flask · Deployed on Vercel
+  </footer>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{
+  "glucose": {
+    "low": null,
+    "borderline": 100,
+    "high": 126,
+    "unit": "mg/dL",
+    "label": "Blood Glucose"
+  },
+  "hba1c": {
+    "low": null,
+    "borderline": 5.7,
+    "high": 6.5,
+    "unit": "%",
+    "label": "HbA1c"
+  },
+  "systolic_bp": {
+    "low": null,
+    "borderline": 130,
+    "high": 140,
+    "unit": "mmHg",
+    "label": "Systolic BP"
+  },
+  "diastolic_bp": {
+    "low": null,
+    "borderline": 85,
+    "high": 90,
+    "unit": "mmHg",
+    "label": "Diastolic BP"
+  },
+  "bmi": {
+    "low": null,
+    "borderline": 25,
+    "high": 30,
+    "unit": "kg/m\u00b2",
+    "label": "BMI"
+  },
+  "cholesterol": {
+    "low": null,
+    "borderline": 200,
+    "high": 240,
+    "unit": "mg/dL",
+    "label": "Total Cholesterol"
+  },
+  "ldl": {
+    "low": null,
+    "borderline": 130,
+    "high": 160,
+    "unit": "mg/dL",
+    "label": "LDL Cholesterol"
+  },
+  "triglycerides": {
+    "low": null,
+    "borderline": 150,
+    "high": 200,
+    "unit": "mg/dL",
+    "label": "Triglycerides"
+  },
+  "hdl": {
+    "low": 40,
+    "borderline": null,
+    "high": null,
+    "unit": "mg/dL",
+    "label": "HDL (Good Cholesterol)"
+  },
+  "heart_rate": {
+    "low": null,
+    "borderline": 90,
+    "high": 100,
+    "unit": "bpm",
+    "label": "Heart Rate"
+  },
+  "creatinine": {
+    "low": null,
+    "borderline": 1.2,
+    "high": 1.5,
+    "unit": "mg/dL",
+    "label": "Creatinine"
+  },
+  "waist_cm": {
+    "low": null,
+    "borderline": 88,
+    "high": 102,
+    "unit": "cm",
+    "label": "Waist Circumference"
+  },
+  "sleep_hours": {
+    "low": 6,
+    "borderline": null,
+    "high": null,
+    "unit": "hrs",
+    "label": "Sleep Hours"
+  },
+  "stress_level": {
+    "low": null,
+    "borderline": 6,
+    "high": 8,
+    "unit": "/10",
+    "label": "Stress Level"
+  }
+}

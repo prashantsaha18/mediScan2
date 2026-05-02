@@ -1,0 +1,122 @@
+{
+  "glucose_high": {
+    "title": "Manage Blood Sugar",
+    "detail": "Your glucose is elevated. Reduce refined carbs, sugary beverages, and white rice. Eat more fiber-rich foods and check levels regularly.",
+    "urgency": "high"
+  },
+  "hba1c_high": {
+    "title": "HbA1c Requires Attention",
+    "detail": "A raised HbA1c suggests poor long-term glucose control. Consult a doctor for a diabetes management plan.",
+    "urgency": "high"
+  },
+  "systolic_bp_high": {
+    "title": "Lower Blood Pressure",
+    "detail": "High systolic BP strains the heart. Reduce sodium (<2g/day), increase potassium, limit caffeine, and manage stress.",
+    "urgency": "high"
+  },
+  "diastolic_bp_high": {
+    "title": "Diastolic BP Elevated",
+    "detail": "Elevated diastolic pressure increases stroke risk. Follow the DASH diet, exercise regularly, and reduce alcohol intake.",
+    "urgency": "medium"
+  },
+  "bmi_high": {
+    "title": "Weight Management Needed",
+    "detail": "Excess weight raises risk for diabetes and heart disease. Aim for a 500 kcal daily deficit through diet and 150 min exercise per week.",
+    "urgency": "medium"
+  },
+  "cholesterol_high": {
+    "title": "Reduce Total Cholesterol",
+    "detail": "Cut saturated fats and trans fats. Increase soluble fiber (oats, beans) and omega-3 fatty acids (fish, flaxseeds).",
+    "urgency": "medium"
+  },
+  "ldl_high": {
+    "title": "LDL \"Bad\" Cholesterol High",
+    "detail": "Elevated LDL accelerates plaque build-up in arteries. Avoid fried foods, increase plant sterols, and consider a statin if advised by your doctor.",
+    "urgency": "high"
+  },
+  "hdl_low": {
+    "title": "Raise HDL \"Good\" Cholesterol",
+    "detail": "Low HDL means less cholesterol removal from arteries. Exercise aerobically, quit smoking, eat healthy fats (olive oil, avocado, nuts).",
+    "urgency": "medium"
+  },
+  "triglycerides_high": {
+    "title": "High Triglycerides",
+    "detail": "Excess sugar and alcohol raises triglycerides. Limit sugar, refined carbs, and alcohol. Eat more omega-3s and increase physical activity.",
+    "urgency": "medium"
+  },
+  "heart_rate_high": {
+    "title": "Elevated Resting Heart Rate",
+    "detail": "A resting heart rate above 100 bpm can signal stress or cardiovascular strain. Practice deep breathing, stay hydrated, and reduce caffeine.",
+    "urgency": "medium"
+  },
+  "creatinine_high": {
+    "title": "Kidney Function Concern",
+    "detail": "Raised creatinine may indicate reduced kidney function. Stay well hydrated, avoid NSAIDs, control blood pressure, and get a kidney function panel.",
+    "urgency": "high"
+  },
+  "waist_cm_high": {
+    "title": "Excess Abdominal Fat",
+    "detail": "Central obesity increases heart and diabetes risk. Reduce refined carbs, alcohol, and add core-strengthening exercises.",
+    "urgency": "medium"
+  },
+  "sleep_hours_low": {
+    "title": "Improve Sleep Quality",
+    "detail": "Sleeping under 6 hours raises cortisol, blood pressure, and insulin resistance. Aim for 7\u20139 hours with a consistent sleep schedule.",
+    "urgency": "medium"
+  },
+  "stress_level_high": {
+    "title": "Reduce Chronic Stress",
+    "detail": "Chronic stress elevates cortisol and blood pressure. Try mindfulness, yoga, 20-min daily walks, journaling, or speaking with a therapist.",
+    "urgency": "medium"
+  },
+  "smoking_active": {
+    "title": "Quit Smoking \u2014 #1 Priority",
+    "detail": "Smoking doubles heart disease risk and directly damages lungs and blood vessels. Use NRT patches or medication to quit.",
+    "urgency": "critical"
+  },
+  "alcohol_heavy": {
+    "title": "Reduce Alcohol Intake",
+    "detail": "Heavy drinking raises blood pressure, triglycerides, and liver risk. Limit to \u22641 drink/day (women) or \u22642/day (men).",
+    "urgency": "high"
+  },
+  "exercise_low": {
+    "title": "Increase Physical Activity",
+    "detail": "Less than 2 active days/week significantly raises disease risk. Start with 30-minute walks 5x/week, add resistance training twice a week.",
+    "urgency": "medium"
+  },
+  "family_history": {
+    "title": "Monitor Due to Family History",
+    "detail": "Genetic predisposition raises your baseline risk. Get annual check-ups including lipid panel, glucose, and blood pressure.",
+    "urgency": "medium"
+  },
+  "diabetes_risk": {
+    "title": "Diabetes Risk Detected",
+    "detail": "Your profile matches pre-diabetic or diabetic patterns. Request an HbA1c and fasting glucose test. Early lifestyle changes can reverse pre-diabetes.",
+    "urgency": "high"
+  },
+  "heart_risk": {
+    "title": "Cardiovascular Risk Elevated",
+    "detail": "Multiple cardiac risk markers are raised. Consider a lipid panel, ECG, and stress test. Prioritize cholesterol control and blood pressure.",
+    "urgency": "high"
+  },
+  "hypertension_risk": {
+    "title": "Hypertension Risk",
+    "detail": "Your blood pressure pattern suggests hypertension. Monitor BP twice daily for 2 weeks and consult a doctor. The DASH diet can reduce SBP by up to 11 mmHg.",
+    "urgency": "high"
+  },
+  "kidney_risk": {
+    "title": "Kidney Health Concern",
+    "detail": "Markers suggest kidney stress. Drink 2\u20133 L of water daily, avoid excessive protein supplements, and control BP and blood sugar.",
+    "urgency": "high"
+  },
+  "see_doctor": {
+    "title": "Consult a Healthcare Professional",
+    "detail": "Your overall risk profile is elevated. A comprehensive health screening with blood work, physical exam, and specialist referral is strongly recommended.",
+    "urgency": "critical"
+  },
+  "healthy": {
+    "title": "Maintain Your Healthy Lifestyle",
+    "detail": "Your parameters are within healthy ranges. Continue regular exercise, a balanced diet, adequate sleep, and annual health check-ups.",
+    "urgency": "low"
+  }
+}
