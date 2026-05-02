@@ -1,4 +1,4 @@
-# MediScan — Vercel Deployment Guide
+# MediScan 
 
 ## Project Structure
 ```
